@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book a Room — Sunrise Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Sunrise Hotel</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="post.html">Rooms</a>
+       
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Booking</h2>
+    <form id="bookingForm">
+      <label>Full name
+        <input name="name" required>
+      </label><br> <br>
+
+
+      <label>Email
+        <input name="email" type="email" required>
+      </label><br><br>
+
+      <label>Phone
+        <input name="phone" type="tel">
+      </label> <br><br>
+
+      <label>Room
+        <select name="room" id="roomSelect">
+          <option>Standard</option>
+          <option>Deluxe</option>
+          <option>Suite</option>
+        </select>
+      </label><br><br>
+
+      <label>Check-in
+        <input name="checkin" type="date" required>
+      </label><br><br>
+
+      <label>Check-out
+        <input name="checkout" type="date" required>
+      </label><br><br>
+
+      <label>Guests
+        <input name="guests" type="number" min="1" value="1" required>
+      </label><br><br>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Request Booking</button>
+      </div>
+    </form>
+
+    <section id="confirmation" class="hidden">
+      <h3>Booking Summary</h3>
+      <div id="summary"></div>
+      <p>This is a demo. No payment or real reservation is created.</p>
+      <p><a href="index.html">Return Home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© Sunrise Hotel</div>
+  </footer>
+
+  
+</body>
+</html>
